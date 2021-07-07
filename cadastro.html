@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!--container dos elementos-->
+    <div class="container">
+        <div class="container-logo">
+            <div class="logo">
+                <img src="/img/cad.gif" alt="">
+                <!--GIF-->
+            </div>
+        </div>
+
+        <!--Container dos elementos do login-->
+        <div class="container-login">
+
+            <!--login-->
+            <div class="login">
+                <img src="/img/astronauta.png" alt="">
+                <!--Icone do perfil-->
+                <span>Seja um tripulante!</span>
+                <form action="cadastro.html"> <!--formulário-->
+                    
+                    <div class="nome">
+                        <div class="i"><i class="fas fa-user"></i></div> <!--icone de usuário-->    
+                        <label for="nome">Nome do Usuário</label>
+                        <input type="text" id="nome" onkeyup='validaNome()'>
+                        <div id='txtNome'></div>
+                    </div>
+
+
+                    <div class="email">
+                        <div class="i"><i class="fa fa-envelope"></i></div> <!--icone do email-->
+                        <label for="nome">Email</label>
+                        <input type="email" placeholder="" id="email" onkeyup="validaEmail()">
+                        <div id="txtEmail"></div>
+                    </div>
+
+                    <div class="genero">
+                        <div class="i"><i class="fa fa-circle"></i></div> <!--icone da seleção-->
+                        <label for="genero">Selecione a opção que você mais se identifica</label>
+                        <select [(ngModel)]="usuario.genero" id="genero">
+                            <option value="mulher">Mulher (cis ou trans)</option>
+                            <option value="homem">Homem (cis ou trans)</option>
+                            <option value="nbinario">Não-bínario</option>
+                            <option value="travesti">Travesti</option>
+                            <option value="ndeclarar">Prefiro não declarar</option>
+                        </select>
+                    </div>
+
+                    <div class="senha">
+                        <div class="i"> <i class="fas fa-lock"></i></div> <!--icone de senha-->
+                        <label for="senha">Senha</label>
+                        <input type="password" placeholder="" id="senha" onkeyup="validaSenha()">
+                        <div id="txtSenha"></div>
+                    </div>
+
+                    <!--botões-->
+                    <div class="buttons">
+                        <button type="submit" id="login">Logar</button>
+                        <button type="submit" id="cadastro" onclick="enviar()">Cadastrar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!--link de integração do javascript-->
+    <script src="/valida.js"></script>
+</body>
+
+</html>

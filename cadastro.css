@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');/*Importação da fonte*/
+
+*{
+    /*fonte da página*/
+    font-family: 'Roboto';
+}
+
+body{
+    /*fundo da página*/
+    background: url(/img/imagemDeFundo.png);
+}
+
+.container{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: row;
+}
+
+.container-logo{
+    
+    /*espaçamento*/
+    margin: 300px 100px 0px 100px;
+    
+}
+
+.container-login{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    margin: 100px 100px;
+
+    /*tamanho*/
+    width: 600px;
+}
+
+.login{
+    /*espaçamento*/
+    margin: 20px;
+    padding: 20px;
+
+    /*fundo*/
+    background-color: #0D0C23;
+
+    /*borda*/
+    border: 11px solid #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 7px 7px 10px rgba(255, 254, 254, 0.25);
+}
+
+.login img{
+    /*tamanho*/
+    width: 150px;
+
+    /*espaçamento*/
+    margin: 20px 150px ;
+}
+
+.login span{
+    /*espaçamento*/
+    display: flex;
+    margin-left: 50px;
+
+    /*texto*/
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.login form{
+    /*espaçamento*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login form .nome{
+    /*espaçamento*/
+    margin: 10px;
+    display: flex;
+
+    border-bottom: 5px solid #ffffff;
+    
+}
+
+
+.login form .email{
+    /*espaçamento*/
+    margin: 10px;
+    display: flex;
+
+    border-bottom: 5px solid #ffffff;
+    
+}
+
+.login form .genero{
+    /*espaçamento*/
+    margin: 10px;
+    display: flex;
+
+    border-bottom: 5px solid #ffffff;
+    
+}
+
+.login form .genero select{
+    margin: 10px;
+}
+
+.login form .senha{
+    /*espaçamento*/
+    display: flex;
+    margin: 10px;
+
+    border-bottom: 5px solid #ffffff;
+}
+
+.login form .confirma{
+    /*espaçamento*/
+    display: flex;
+    margin: 10px;
+
+    border-bottom: 5px solid #ffffff;
+}
+
+
+
+.login label{
+    position: absolute;
+    
+    margin-left: 30px;
+    transform: translateY(-70%);
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.login input{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.i i{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.buttons{
+    /*espaçamento*/
+    display: flex;
+}
+
+.buttons button{
+    /*espaçamento*/
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.buttons  #login{
+    /*cursor*/
+    cursor: pointer;
+
+    /*tamanho*/
+    width: 150px;
+    height: 50px;
+
+    /*borda*/
+    border-radius: 59px;
+    border-style: none;
+
+    /*fundo*/
+    background-color: #0BCD70;
+
+    /*texto*/
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+
+    /*animação*/
+    transition: 0.3s;
+}
+    /*animação*/
+.buttons #login:hover{
+    box-shadow: 0px 0px 12px #ffffff;
+    text-shadow: 0px 0px 12px #ffffff;
+}
+
+.buttons  #cadastro{
+    /*cursor*/
+    cursor: pointer;
+
+    /*tamanho*/
+    width: 150px;
+    height: 50px;
+
+    /*borda*/
+    border-radius: 59px;
+    border-style: none;
+
+    /*fundo*/
+    background-color: #D21586;
+
+    /*texto*/
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+
+    /*animação*/
+    transition: 0.3s;
+}
+    /*animação*/
+.buttons #cadastro:hover{
+    box-shadow: 0px 0px 12px #ffffff;
+    text-shadow: 0px 0px 12px #ffffff;
+}
