@@ -15,7 +15,7 @@
     <div class="container">
         <div class="container-logo">
             <div class="logo">
-                <img src="/img/cad.gif" alt="">
+                <img src="./img/cad.gif" alt="">
                 <!--GIF-->
             </div>
         </div>
@@ -25,10 +25,10 @@
 
             <!--login-->
             <div class="login">
-                <img src="/img/astronauta.png" alt="">
+                <img src="./img/astronauta.png" alt="">
                 <!--Icone do perfil-->
                 <span>Seja um tripulante!</span>
-                <form action="cadastro.html"> <!--formulário-->
+                <form> <!--formulário-->
                     
                     <div class="nome">
                         <div class="i"><i class="fas fa-user"></i></div> <!--icone de usuário-->    
@@ -41,7 +41,7 @@
                     <div class="email">
                         <div class="i"><i class="fa fa-envelope"></i></div> <!--icone do email-->
                         <label for="nome">Email</label>
-                        <input type="email" placeholder="" id="email" onkeyup="validaEmail()">
+                        <input type="email" placeholder="" id="email" onkeyup="validaEmailComAtualizacao()">
                         <div id="txtEmail"></div>
                     </div>
 
@@ -60,14 +60,18 @@
                     <div class="senha">
                         <div class="i"> <i class="fas fa-lock"></i></div> <!--icone de senha-->
                         <label for="senha">Senha</label>
-                        <input type="password" placeholder="" id="senha" onkeyup="validaSenha()">
+                        <input type="password" placeholder="" id="senha" onkeyup="validaSenhaComAtualizacao()">
                         <div id="txtSenha"></div>
                     </div>
 
+                    <!-- data de nascimento -->
+
+                    <!-- deseja se inscrever na nossa newsletter? -->
+
                     <!--botões-->
                     <div class="buttons">
-                        <button type="submit" id="login">Logar</button>
-                        <button type="submit" id="cadastro" onclick="enviar()">Cadastrar</button>
+                        <a type="submit" id="login" href="./index.html">Logar</a>
+                        <button type="submit" id="cadastro" onclick="enviar(event)">Cadastrar</button>
                     </div>
 
                 </form>
@@ -77,7 +81,7 @@
     </div>
 
     <!--link de integração do javascript-->
-    <script src="/valida.js"></script>
+    <script src="./valida.js"></script>
 </body>
 
 </html>

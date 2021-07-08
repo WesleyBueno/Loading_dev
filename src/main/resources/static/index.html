@@ -14,32 +14,32 @@
 
         <div class="container-logo">
             <div class="logo">
-                <img src="/img/tenor.gif" alt="">
+                <img src="./img/tenor.gif" alt="">
             </div>
         </div>
     
         <div class="container-login">
     
             <div class="login">
-                <img src="/img/astronauta.png" alt="">
+                <img src="./img/astronauta.png" alt="">
                 <span>BEM VINDE!</span>
-                <form action="index.html">
+                <form>
     
                     <div class="nome">
                         <div class="i"><i class="fas fa-user"></i></div>
-                        <label for="nome">Nome do Usuário</label>
-                        <input type="text" placeholder="">
+                        <label for="nome">Email do Usuário</label>
+                        <input type="text" id="email" placeholder="" onkeyup="validaEmail()">
                     </div>
     
                     <div class="senha">
                         <div class="i"> <i class="fas fa-lock"></i></div>
                         <label for="senha">Senha</label>
-                        <input type="password" placeholder="">
+                        <input type="password" id="senha" placeholder="" onkeyup="validaSenha()">
                     </div>
                     
                     <div class="buttons">
-                        <button type="submit" id="login">Logar</button>
-                        <button type="submit" id="cadastro">Cadastro</button>
+                        <button type="submit" id="login" onclick="logar(event)">Logar</button>
+                        <a id="cadastro" href="./cadastro.html">Cadastro</a>
                     </div>
                     
                 </form>
@@ -48,10 +48,7 @@
 
     </div>
 
-
-    <script>
-
-
-    </script>
+    <!--link de integração do javascript-->
+    <script src="./valida.js"></script>
 </body>
 </html>

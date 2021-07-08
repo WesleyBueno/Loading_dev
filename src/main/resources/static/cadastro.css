@@ -7,7 +7,7 @@
 
 body{
     /*fundo da página*/
-    background: url(/img/imagemDeFundo.png);
+    background: url(./img/imagemDeFundo.png);
 }
 
 .container{
