@@ -6,6 +6,7 @@ let nomeOk = false
 let emailOk = false
 let senhaOk = false
 
+
 /*Funções*/
 function validaNome() {
     let txt = document.querySelector('#txtNome')

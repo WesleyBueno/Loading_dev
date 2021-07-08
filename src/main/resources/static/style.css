@@ -7,7 +7,7 @@
 
 body{
     /*fundo da página*/
-    background: url(/img/imagemDeFundo.png);
+    background: url(./img/imagemDeFundo.png);
 }
 
 .container{
@@ -17,9 +17,12 @@ body{
 }
 
 .container-logo{
-    
     /*espaçamento*/
     margin: 100px 100px;
+}
+
+.container-logo img{
+    width: 70vh;
 }
 
 .container-login{
@@ -29,7 +32,7 @@ body{
     margin: 100px 100px;
 
     /*tamanho*/
-    width: 600px;
+    width: 100vw;
 }
 
 .login{
@@ -48,7 +51,7 @@ body{
 
 .login img{
     /*tamanho*/
-    width: 150px;
+    width: 10vw;
 
     /*espaçamento*/
     margin: 20px 150px ;
@@ -79,15 +82,6 @@ body{
 
     border-bottom: 5px solid #ffffff;
     
-}
-
-.login form .nome.focus .i i{
-    text-shadow:0px 0px 12px #ffffff ;
-}
-
-.login form .nome.focus label{
-    top: 450px;
-    font-size: 15px;
 }
 
 .login form .senha{
@@ -135,6 +129,12 @@ body{
     margin-left: 40px;
 }
 
+.buttons a{
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+
 .buttons  #login{
     /*cursor*/
     cursor: pointer;
@@ -170,7 +170,9 @@ body{
 
     /*tamanho*/
     width: 150px;
-    height: 50px;
+    height: 35px;
+    padding-top: 13px;
+
 
     /*borda*/
     border-radius: 59px;
@@ -183,6 +185,8 @@ body{
     color: white;
     font-weight: 300;
     font-size: 20px;
+    text-decoration: none;
+    text-align: center;
 
     /*animação*/
     transition: 0.3s;

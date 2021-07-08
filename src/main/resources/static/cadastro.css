@@ -160,13 +160,22 @@ body{
     margin-left: 40px;
 }
 
+.buttons a{
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+
+
 .buttons  #login{
     /*cursor*/
     cursor: pointer;
 
     /*tamanho*/
     width: 150px;
-    height: 50px;
+    height: 40px;
+    
+    padding-top: 12px;
 
     /*borda*/
     border-radius: 59px;
@@ -177,6 +186,9 @@ body{
 
     /*texto*/
     color: white;
+    text-decoration: none;
+    text-align: center;
+    
     font-weight: 300;
     font-size: 20px;
 
